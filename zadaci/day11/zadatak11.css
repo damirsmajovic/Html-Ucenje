@@ -1,0 +1,132 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+nav{
+ width: 100%;
+ height: 10vh;
+ display: flex;
+ justify-content: flex-end;
+ align-items: center;
+}
+nav ul{
+ width: 25%;
+ height: 100%;
+ background-color: aqua;
+ list-style-type: none;
+ display: flex;
+ justify-content: flex-end;
+ align-items: center;
+}
+nav ul li{
+ margin-right: 10px;
+}
+
+.nav-div{
+ width: 15%;
+ height: 80%;
+ border: 1px solid black;
+ border-radius: 50%;
+}
+main{
+ width: 100%;
+ height: 70vh;
+ border: 1px solid black;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+main ul{
+ list-style-type: none;
+ display: flex;
+ width: 30%;
+ height: 20vh;
+ border: 1px solid black;
+ justify-content: center;
+ align-items: center;
+ font-size: 100px;
+}
+.g1,
+.g4{
+ color: blue;
+}
+.g2,
+.g6{
+ color: red;
+}
+.g3{
+ color: yellow;
+}
+.g5{
+ color: green;
+}
+
+.main-input{
+ width: 50%;
+ height: 10%;
+ border: 1px solid red;
+ display: flex;
+ justify-content: space-around;
+ position: relative;
+ align-items: center;
+ border-radius: 15px;
+ margin-top: 10px;
+}
+.main-input input{
+ width: 80%;
+ height: 100%;
+ border: transparent;
+}
+.div{
+ width: 25%;
+ height: 10%;
+ border:1px solid blue;
+ margin-top: 20px;
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+}
+.prvi,
+.drugi{
+ width: 45%;
+ height: 80%;
+ border: transparent;
+ background-color: rgba(128, 128, 128, 0.05);
+}
+.text{
+ margin-top: 20px;
+ font-size: 15px;
+}
+section{
+ width: 100%;
+ height: 10vh;
+ background-color: rgba(128, 128, 128, 0.1);
+ display: flex;
+ align-items: center;
+ padding-left: 15px;
+}
+footer{
+ width: 100%;
+ height: 10vh;
+  background-color: rgba(128, 128, 128, 0.1);
+  display: flex;
+  border-top:1px solid rgba(128, 128, 128, 0.5) ;
+  align-items: center;
+  justify-content: space-between;
+}
+.f-1,
+.f-2{
+ list-style-type: none;
+ display: flex;
+}
+.f-1,
+.f-2{
+ width: 40%;
+ height: 100%;
+ justify-content: space-around;
+ align-items: center;
+}
+.f-2{
+ width: 20%;
+}

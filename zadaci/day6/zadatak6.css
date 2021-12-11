@@ -1,0 +1,60 @@
+.container{
+ width: 90%;
+ height: 80vh;
+ background-color: aquamarine;
+ margin: auto;
+ display: flex;
+ justify-content: space-evenly;
+ align-items: st;
+ flex-wrap: wrap-reverse;
+ flex-direction: ;
+ justify-content:;
+}
+.prvi,
+.drugi,
+.treci,
+.cetvrti{
+ width: 100px;
+ height: 100px;
+}
+.prvi{
+ background-color: blue;
+}
+.drugi{
+ background-color: brown;
+}
+.treci{
+ background-color: cornflowerblue;
+}
+.cetvrti{
+ background-color: chocolate;
+}
+
+
+
+/*
+justify-content= centrita po x osi
+{
+ {
+ center
+ flext-start
+ flex-end
+}
+{
+ space-between;
+ space-around;
+ space-evenly;
+}
+}
+align-items= centrira po y osi
+{
+ center
+ start
+ end
+}
+
+flex-wrap=
+
+flex-direction= direkcija kojom ide
+ako se promeni direkcija onda justifiy content menja osu( ide po y osi)
+*/

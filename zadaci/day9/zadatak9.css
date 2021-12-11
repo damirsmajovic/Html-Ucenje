@@ -1,0 +1,25 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+.container{
+display: grid;
+height: 100vh;
+ grid-template-columns:repeat(28,1fr);
+ grid-template-rows: repeat(6,1fr) ;
+background-color: aqua;
+}
+.one{
+ grid-area: one;
+ background-color:orange;
+ grid-column-start: 1;
+ grid-column-end: 29;
+ grid-row-start: 1;
+ grid-row-end: 2;
+}
+.two{
+ grid-area: two;
+ background-color:blue;
+}

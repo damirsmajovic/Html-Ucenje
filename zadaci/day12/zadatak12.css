@@ -1,0 +1,109 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+header{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-size: 70px;
+ height: 20vh;
+ color: blue;
+}
+.main{
+ width: 40%;
+ height: 100vh;
+ margin: auto;
+ border: 1px solid black;
+ border-radius: 5px;
+}
+.one{
+ width: 100%;
+ height: 15%;
+ border-bottom: 1px solid black;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+.two{
+ width: 100%;
+ height: 30%;
+ display: flex;
+ align-items: center;
+ justify-content: space-around;
+ flex-wrap: wrap;
+}
+.inp1,
+.inp2{
+ width: 46%;
+ height: 40px;
+}
+.inp3,
+.inp4{
+ width: 96%;
+ height:40px ;
+}
+.three{
+ width: 100%;
+ height: 35%;
+}
+.birthday,
+.gender{
+ width: 100%;
+ height: 25%;
+ display: flex;
+ justify-content: space-around;
+ margin-top: 5px;
+}
+select{
+ height: 100%;
+ width: 95%;
+ border: transparent;
+}
+.birthday div,
+.gender div{
+ width: 30%;
+ height: 80%;
+ border: 1px solid black;
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ 
+}
+.gender input{
+ margin-left: 10px;
+ height: 15px;
+ width: 15px;
+}
+.three p{
+ font-size: 12px;
+ padding-left: 5px;
+}
+.three h5{
+ padding-left: 5px;
+}
+.footer{
+ width: 100%;
+ height:20% ;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+.footer button{
+ width: 55%;
+ height: 30%;
+ margin-top: 10px;
+ font-size: 15px;
+ color: white;
+ background-color: green;
+ border-radius: 5px;
+ border:transparent;
+}
+.footer h2{
+ font-size: 20px;
+ margin-top: 10px;
+ color: blue;
+}

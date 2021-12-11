@@ -1,0 +1,36 @@
+.main{
+ width: 300px;
+ height: 300px;
+ background-color: brown;
+transition: 2s all ease;
+display: inline-block;
+}
+.main:hover{
+ background-color: cadetblue;
+ width: 250px;
+ height: 250px;
+
+}
+
+.second{
+ margin: 5%;
+ width: 300px;
+ height: 300px;
+ background-color: red;
+display: inline-block;
+transition: 2s all ease;
+}
+
+.second:hover{
+transform: scale(-1.5);
+background-color: royalblue;
+}
+
+/*
+html{
+  scrollbehavior:smooth;
+ 
+}
+position:fixed;
+  top:0
+*/
