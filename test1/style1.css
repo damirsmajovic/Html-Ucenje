@@ -1,0 +1,64 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+body{
+ width: 100%;
+ height: 100vh;
+}
+header{
+ width: 100%;
+ justify-content: center;
+ display: flex;
+ align-items: center;
+ height: 10%;
+ border: 1px solid black;
+}
+main{
+ width: 100%;
+ height: 80%;
+ border: 1px solid black;
+ display: flex;
+}
+nav,
+section,
+.sidebar{
+ height: 100%;
+ width: 18%;
+ border: 1px solid black;
+ text-align: center;
+}
+section{
+ width: 65%;
+}
+.sidebar{
+ width:22%;
+}
+footer{
+ width: 100%;
+ height: 10%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ border: 1px solid black;
+}
+@media screen and (max-width:450px){
+ main{
+  flex-direction: column;
+ }
+ nav,
+section,
+.sidebar{
+ width: 100%;
+}
+nav{
+ height: 20%;
+}
+.sidebar{
+ height: 25%;
+}
+section{
+ height: 55%;
+}
+}
