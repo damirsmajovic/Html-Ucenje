@@ -1,0 +1,138 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+body,
+.header-picture,
+.header-menu,
+.header-menu ul{
+ width: 100%;
+ height: 100%;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+body{
+ background-color: black;
+}
+header,
+section{
+ width: 92%;
+ height: 18vh;
+ background-color: black;
+ display: flex;
+ justify-content: space-between;
+}
+.header-picture{
+ width: 30%;
+ border: 1px solid red;
+ background-image: url("logo1.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+}
+.header-menu{
+ width: 50%;
+}
+.header-menu ul,
+.header-menu ul a{
+ list-style-type: none;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-around;
+ align-items: center;
+ font-size: 22px;
+ font-weight: 400;
+ color: white;
+ font-family: 'Ubuntu Condensed', sans-serif;
+}
+.header-menu ul a,
+.section1-desno a{
+ text-decoration: none;
+}
+.header-menu ul a{
+ color: white;
+ height: 100%;
+ width: 18%;
+ border-bottom: 2px solid transparent;
+}
+.header-menu ul a:hover {
+ border-bottom: 2px solid white;
+ color: #fffbcc;
+}
+.s1{
+ height: 84vh;
+ margin-top: 15px;
+ display: flex;
+}
+.section1-levo,
+.section1-desno{
+ width: 66%;
+ height: 100%;
+ background-color: blue;
+}
+.section1-desno,
+.section-desno-text{
+ width: 34%;
+ background-color: #ffe229;
+ display: flex;
+ flex-direction: column;
+ padding-top: 70px;
+ align-items: flex-end;
+}
+.section-desno-text,
+.section1-desno a,
+.section1-desno a div{
+ width: 90%;
+ height: 90%;
+ display: flex;
+
+ font-size: 30px;
+ font-family: 'Ubuntu Condensed', sans-serif;
+ justify-content: space-around;
+ align-items: center;
+ padding-top: 0;
+ color: black;
+}
+.section1-desno a{
+ display: flex;
+ height:17% ;
+ justify-content: flex-start;
+}
+.section1-desno a div{
+height: 90%;
+background-color: black;
+width: 17%;
+justify-content:center ;
+color: white;
+border-radius:50%;
+margin-right: 5%;
+}
+.s2{
+ height: 55vh;
+ display: flex;
+ align-items: center;
+}
+.section2_div{
+ height: 70%;
+ width: 33.3%;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+ align-items: center;
+ font-size: 30px;
+ color: white;
+ font-family: 'Ubuntu Condensed', sans-serif;
+font-weight: 900;
+}
+.s2-linija{
+ width: 90%;
+ height: 3px;
+ background-color: grey;
+}
+.s2 p{
+ font-size: 16px;
+ text-align: center;
+ font-weight: normal;
+}
