@@ -1,3 +1,6 @@
+html{
+ scroll-behavior: smooth;
+}
 *{
  margin: 0;
  padding: 0;
@@ -62,6 +65,9 @@ footer{
  border-bottom: 2px solid white;
  color: #fffbcc;
 }
+header{
+  box-shadow: grey 0 0 2px;
+}
 /* Down is Section 1*/
 .s1{
  height: 84vh;
@@ -83,10 +89,12 @@ footer{
  align-items: flex-end;
 }
 .section-desno-text,
-.section1-desno a,
-.section1-desno a div{
+.s1-a-ikonice,
+.s1-ikonice,
+.s1-a-button,
+.s1-button{
  width: 90%;
- height: 90%;
+ height: 95%;
  display: flex;
  font-size: 30px;
  font-family: 'Ubuntu Condensed', sans-serif;
@@ -95,12 +103,12 @@ footer{
  padding-top: 0;
  color: black;
 }
-.section1-desno a{
+.s1-a-ikonice{
  display: flex;
  height:17% ;
  justify-content: flex-start;
 }
-.section1-desno a div{
+.s1-ikonice{
 height: 90%;
 background-color: black;
 width: 19%;
@@ -108,6 +116,33 @@ justify-content:center ;
 color: white;
 border-radius:50%;
 margin-right: 5%;
+}
+.number{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  width:19% ;
+  background-color: transparent;
+  font-size: 21px;
+  align-items: center;
+}
+.s1-a-button{
+  height: 16%;
+  width: 75%;
+}
+.s1-button{
+  width: 100%;
+  height: 100%;
+  border: 2px solid black;
+  border-radius: 30px;
+  color: white;
+  background-color: #191919;
+  transition: 1s all ease;
+}
+.s1-button:hover{
+  background-color: white;
+  color:black;
+  border: transparent;
 }
 /* Down is Section 2*/
 .s2{
@@ -135,6 +170,10 @@ font-weight: 900;
  font-size: 16px;
  text-align: center;
  font-weight: normal;
+}
+.s2-paragraph{
+  width: 98%;
+  height: 30%;
 }
 /* Down is Section 3*/
 .s3{
@@ -165,7 +204,76 @@ background-color: #ffe229;
 .s3-linija{
  width: 100%;
  height: 3px;
- background-color: grey;
+ background-color: rgba(128, 128, 128, 0.6);
+}
+/*Down is Section-call */
+.section-call,
+.section-call-main,
+.section-call-kocke,
+.nesto{
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 50vh;
+}
+.section-call{
+  height:60vh ;
+  margin-top: 50px;
+}
+.section-call-main,
+.section-call-kocke,
+.section-call-text{
+  width: 70%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+}
+.section-call-text{
+  height: 30%;
+  color: white;
+  font-size: 25px;
+ font-family: 'Ubuntu Condensed', sans-serif;
+ justify-content: space-around;
+ align-items: center;
+}
+.section-call-text p{
+  font-size: 20px;
+}
+.section-call-kocke{
+  flex-direction: row;
+  justify-content: center;
+  color: white;
+  font-size: 28px;
+  font-weight: lighter;
+ font-family: 'Ubuntu Condensed', sans-serif;
+}  
+.nesto{
+  justify-content: center;
+  background-color: white;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  font-size: 30px;
+   color: black;
+ border-radius: 50%;
+ transition: 0.7s all ease;
+}
+.section-call-kocke-dva{
+  justify-content: center;
+}
+.nesto-jedan,
+.nesto-dva,
+.wcp{
+  margin-right: 10px;
+}
+.wcp{
+  background-color:#25D366;
+  color: white;
+}
+.viber{
+  margin-left: 10px;
+  background-color: #665cac;
+  color: white;
 }
 /* Down is Section-linija*/
 .section-linija{
@@ -223,4 +331,140 @@ footer{
  color: #ffe229;
  background-color: black;
   box-shadow:  #ffe229 0 0 2px;
+}
+/*Section 9*/
+.section9{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.section9-one,
+.section9-two{
+  width: 80%;
+  height: 25vh;
+  display: flex;
+}
+.address-us{
+  width: 50%;
+  height:100% ;
+  margin-right: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: grey 0 0 2px;
+  color: white;
+}
+.email-us,
+.call-us{
+  width: 25%;
+  height: 100%;
+    margin-right: 25px;
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: grey 0 0 2px;
+}
+.call-us{
+  margin-right: 0;
+}
+.s9-box{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  border-radius:50% ;
+  /*border: 2px dotted #cc1616;*/
+  background-color: white;
+}
+.s9-icons{
+  color: black;
+  font-size: 30px;
+}
+.section9 h3,
+h4{
+  padding-top: 8px;
+  color: white;
+}
+
+.section9-two{
+height: 60%;
+margin-top: 25px;
+}
+.mapa{
+  width: 47.5%;
+  height:100% ;
+}
+iframe{
+  width: 100%;
+  height: 100%;
+}
+.class9-info{
+  width: 50%;
+  height: 100%;
+    margin-left: 25px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: grey 0 0 5px;
+}
+.section9 form{
+  width: 92%;
+  height: 70%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+.section9-minicontainer{
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+.s9-name,
+.s9-email{
+  width: 47%;
+  height: 35px;
+  padding-left:10px ;
+}
+.s9-subject{
+  width: 97.3%;
+  height: 35px;
+  padding-left: 10px;
+}
+.section9 textarea{
+  width: 98%;
+  padding-left: 8px;
+  padding-top: 10px;
+}
+
+.s9-a-button{
+  background-color:  white;
+  margin-top: 30px;
+  width: 30% ;
+  height: 40px;
+  border: transparent;
+  font-weight: bolder;
+  transition: 0.5s all ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.s9-button{
+border: transparent;
+background-color: transparent;
+  transition: 0.5s all ease;
+}
+.s9-a-button:hover .s9-button{
+  color: white;
+}
+.s9-a-button:hover{
+  background-color:#ffe229 ;
 }
