@@ -26,7 +26,7 @@ body{
 header,
 section,
 footer{
- width: 1290px;
+ width: 90%;
  height: 125px;
  background-color: black;
  display: flex;
@@ -70,7 +70,7 @@ header{
 }
 /* Down is Section 1*/
 .s1{
- height: 565px;
+ height: 500px;
  margin-top: 15px;
 }
 .section1-levo,
@@ -82,7 +82,7 @@ header{
 .section1-desno,
 .section-desno-text{
  width: 34%;
- background-color: #ffe229;
+ background-color: #ffd60a;
  display: flex;
  flex-direction: column;
  padding-top: 70px;
@@ -92,7 +92,8 @@ header{
 .s1-a-ikonice,
 .s1-ikonice,
 .s1-a-button,
-.s1-button{
+.s1-button,
+.text-container{
  width: 90%;
  height: 95%;
  display: flex;
@@ -103,10 +104,16 @@ header{
  padding-top: 0;
  color: black;
 }
+.text-container{
+  flex-direction: column;
+  width: 100%;
+  height:40% ;
+  justify-content: space-between;
+}
 .s1-a-ikonice{
  display: flex;
- height:17% ;
  justify-content: flex-start;
+ height:44% ;
 }
 .s1-ikonice{
 height: 90%;
@@ -117,37 +124,42 @@ color: white;
 border-radius:50%;
 margin-right: 5%;
 }
-.number{
+.number,
+.number-desno{
   height: 100%;
   display: flex;
-  flex-direction: column;
-  width:19% ;
+  width:28% ;
   background-color: transparent;
   font-size: 21px;
+  justify-content: space-between;
   align-items: center;
+}
+.number-desno{
+  font-size: 30px;
+  width: 40%;
+  justify-content: center;
 }
 .s1-a-button{
   height: 16%;
   width: 75%;
-  background-color: transparent;
 }
 .s1-button{
-  width: 90%;
-  height: 90%;
+  width: 100%;
+  height: 100%;
   border: 2px solid black;
   border-radius: 30px;
   color: white;
   background-color: #191919;
-  transition: 1s all ease;
+  transition: 0.7s all ease;
 }
 .s1-button:hover{
- font-size: 25px;
- height: 80%;
- width: 80%;
+  background-color: #ffa200;
+  color:black;
+  border: transparent;
 }
 /* Down is Section 2*/
 .s2{
- height: 365px;
+ height: 330px;
  align-items: center;
 }
 .section2_div{
@@ -178,11 +190,11 @@ font-weight: 900;
 }
 /* Down is Section 3*/
 .s3{
-height: 1000px;
+height: 900px;
 flex-direction: column;
 align-items: center;
 justify-content: center;
-background-color: #ffe229;
+background-color: #ffd60a;
 }
 .s3-div{
  height: 22%;
@@ -218,7 +230,7 @@ background-color: #ffe229;
   height: 50vh;
 }
 .section-call{
-  height: 380px;
+  height: 345px;
   margin-top: 50px;
 }
 .section-call-main,
@@ -236,6 +248,7 @@ background-color: #ffe229;
  font-family: 'Ubuntu Condensed', sans-serif;
  justify-content: space-around;
  align-items: center;
+ text-align: center;
 }
 .section-call-text p{
   font-size: 20px;
@@ -262,6 +275,11 @@ background-color: #ffe229;
 .section-call-kocke-dva{
   justify-content: center;
 }
+.section-call-kocke-tri{
+  justify-content: space-around;
+  font-size: 40px;
+  width: 55%;
+}
 .contact-jedan,
 .contact-dva,
 .wcp{
@@ -275,6 +293,8 @@ background-color: #ffe229;
   margin-left: 10px;
   background-color: #665cac;
   color: white;
+  pointer-events: none;
+   cursor: default;
 }
 /* Down is Section-linija*/
 .section-linija{
@@ -286,7 +306,7 @@ background-color: #ffe229;
 
 /* Down is Footer*/
 footer{
- height: 270px;
+ height: 250px;
  display: flex;
  justify-content: center;
  align-items: center;
@@ -336,7 +356,7 @@ footer{
 /*Section 9*/
 .section9{
   width: 100%;
-  height:610px;
+  height:550px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -468,4 +488,269 @@ background-color: transparent;
 }
 .s9-a-button:hover{
   background-color:#ffe229 ;
+}
+/*Min-Width bellow*/
+@media  screen and (min-width:1250px){
+  header,
+  section,
+  footer{
+    width: 85%;
+  }
+}@media  screen and (min-width:1350px){
+  header,
+  section,
+  footer{
+    width: 80%;
+  }
+}
+@media  screen and (min-width:1500px){
+  header,
+  section,
+  footer{
+    width: 70%;
+  }
+}
+@media  screen and (min-width:1750px){
+  header,
+  section,
+  footer{
+    width: 60%;
+  }
+}
+@media  screen and (min-width:2000px){
+  header,
+  section,
+  footer{
+    width: 50%;
+  }
+}
+@media  screen and (min-width:3000px){
+  header,
+  section,
+  footer{
+    width: 30%;
+  }
+}
+@media  screen and (min-width:3500px){
+  header,
+  section,
+  footer{
+    width: 25%;
+  }
+  .number-desno{
+    width: 40%;
+    font-size:20px ;
+    justify-content: center;
+  }
+  .section-call-kocke-tri{
+    width:70% ;
+  }
+}
+@media  screen and (min-width:5000px){
+  header,
+  section,
+  footer{
+    width: 20%;
+  }
+}
+/*Max-Width bellow*/
+@media screen and (max-width:1120px){
+  .s1{
+    flex-direction: column;
+    height: 700px;
+  }
+  #desno{
+    height: 80%;
+    order: 1;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+  #levo{
+    order: 2;
+    width: 100%;
+  }
+  .section-desno-text{
+    width: 65%;
+    height: 80%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 35px;
+  }
+  .s1-a-ikonice{
+    width: 55%;
+    justify-content: center;
+    font-size: 35px;
+  }
+  .s1-a-ikonice-mail{
+    width:35% ;
+  }
+  .s1-ikonice{
+    width: 60px;
+    height: 60px;
+  }
+  .number-desno{
+    font-size: 35px;
+  }
+  .number{
+    font-size: 25px;
+  }
+  .text-container{
+    flex-direction: row;
+    justify-content: center;
+  }
+  .s1-a-button{
+    width: 50%;
+  }
+}
+@media screen and (max-width:1090px){
+  .section1-desno{
+    width: 70%;
+  }
+  .s1-a-ikonice{
+    width: 64%;
+  }
+  .s1-a-ikonice-mail{
+    width: 36%;
+  }
+  .section-call-kocke-tri{
+    width: 65%;
+  }
+  .section-call-text{
+    text-align: center;
+    height: 35%;
+  }
+  .section-call{
+    height: 400px;
+  }
+  .section-call-main{
+    height: 60%;
+  }
+}
+@media screen and (max-width:935px){
+  .section-desno-text{
+    font-size: 30px;
+    height: 95%;
+  }
+   .s1-a-ikonice{
+    font-size: 30px;
+  }
+  .s1-ikonice{
+    width: 50px;
+    height: 50px;
+  }
+  .number-desno{
+    font-size: 30px;
+  }
+  .number{
+    font-size: 20px;
+  }
+  .section-call-main{
+    width: 80%;
+  }
+  .linkovi{
+    width: 25%;
+  }
+}
+@media screen and (max-width:875px) {
+  header,
+  section,
+  footer{
+    width: 100%;
+  }
+  .s2{
+    flex-direction: column;
+    height: 600px;
+    justify-content: center;
+  }
+  .section2_div{
+    width: 80%;
+    height: 30%;
+  }
+  .section-desno-text,
+  .section-call-kocke{
+    width: 80%;
+  }
+  .s1-a-ikonice{
+    font-size: 35px;
+    justify-content: flex-end;
+  }
+  .s1-a-ikonice-mail{
+    width:35% ;
+    justify-content: flex-start;
+  }
+  .s1-ikonice{
+    width: 60px;
+    height: 60px;
+  }
+  .number-desno{
+    font-size: 35px;
+  }
+  .number{
+    font-size: 25px;
+  }
+  .section-call-kocke-tri{
+    width: 65%;
+  }
+}
+@media screen and (max-width:730px) {
+  .text-container{
+    flex-direction: column;
+    height: 55%;
+    width: 70%;
+  }
+  .s1-a-ikonice{
+    width:100%;
+    justify-content: flex-start;
+  }
+  .section-call-kocke-tri{
+    width: 75%;
+  }
+  .footer-div{
+    width:80%;
+  }
+}
+@media screen and (max-width:645px) {
+  .text-container{
+    width:80% ;
+  }
+  .section-call-kocke-tri,
+  .section-call-kocke{
+    width: 85%;
+  }
+}
+@media screen and (max-width:560px) {
+  .s1{
+    height: 800px;
+  }
+  .text-container{
+    width: 90%;
+  }
+  .s1-a-ikonice{
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .s1-a-ikonice-mail{
+    justify-content: flex-start;
+  }
+  .s1-a-button{
+    width: 70%;
+  }
+  .section-call-kocke-tri,
+  .section-call-kocke{
+    width: 100%;
+  }
+  .footer-div{
+    width:100%;
+  }
+}
+@media screen and (max-width:500px) {
+  .section-desno-text{
+    width: 100%;
+  }
+  .section-call-main{
+    width: 100%;
+  }
 }

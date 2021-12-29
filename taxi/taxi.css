@@ -26,7 +26,7 @@ body{
 header,
 section,
 footer{
- width: 1290px;
+ width: 1160px;
  height: 125px;
  background-color: black;
  display: flex;
@@ -70,7 +70,7 @@ header{
 }
 /* Down is Section 1*/
 .s1{
- height: 565px;
+ height: 500px;
  margin-top: 15px;
 }
 .section1-levo,
@@ -82,7 +82,7 @@ header{
 .section1-desno,
 .section-desno-text{
  width: 34%;
- background-color: #ffe229;
+ background-color: #ffd60a;
  display: flex;
  flex-direction: column;
  padding-top: 70px;
@@ -146,13 +146,13 @@ margin-right: 5%;
   transition: 1s all ease;
 }
 .s1-button:hover{
-  background-color: white;
+  background-color: #ffa200;
   color:black;
   border: transparent;
 }
 /* Down is Section 2*/
 .s2{
- height: 365px;
+ height: 330px;
  align-items: center;
 }
 .section2_div{
@@ -183,11 +183,11 @@ font-weight: 900;
 }
 /* Down is Section 3*/
 .s3{
-height: 1000px;
+height: 900px;
 flex-direction: column;
 align-items: center;
 justify-content: center;
-background-color: #ffe229;
+background-color: #ffd60a;
 }
 .s3-div{
  height: 22%;
@@ -223,7 +223,7 @@ background-color: #ffe229;
   height: 50vh;
 }
 .section-call{
-  height: 380px;
+  height: 345px;
   margin-top: 50px;
 }
 .section-call-main,
@@ -267,6 +267,11 @@ background-color: #ffe229;
 .section-call-kocke-dva{
   justify-content: center;
 }
+.section-call-kocke-tri{
+  justify-content: space-around;
+  font-size: 40px;
+  width: 50%;
+}
 .contact-jedan,
 .contact-dva,
 .wcp{
@@ -280,6 +285,8 @@ background-color: #ffe229;
   margin-left: 10px;
   background-color: #665cac;
   color: white;
+  pointer-events: none;
+   cursor: default;
 }
 /* Down is Section-linija*/
 .section-linija{
@@ -291,7 +298,7 @@ background-color: #ffe229;
 
 /* Down is Footer*/
 footer{
- height: 270px;
+ height: 250px;
  display: flex;
  justify-content: center;
  align-items: center;
@@ -341,7 +348,7 @@ footer{
 /*Section 9*/
 .section9{
   width: 100%;
-  height:610px;
+  height:550px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -473,4 +480,9 @@ background-color: transparent;
 }
 .s9-a-button:hover{
   background-color:#ffe229 ;
+}
+@media screen and (max-width:1180px){
+  .s1{
+    
+  }
 }
