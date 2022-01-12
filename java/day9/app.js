@@ -25,25 +25,24 @@
 //  console.log(red);
 // }
 
-b=[10]
-brg=0;
- g=0
- brd=0;
- d=0
- brn=0
-for(i=0;i<10;i++){
- b[i]=prompt("Unesite broj temperature");
+b = [];
+brg = 0;
+g = 0
+brd = 0;
+d = 0
+for (i = 0; i < 10; i++) {
+ b[i] = prompt("Unesite broj temperature");
 }
-for(i=0;i<10;i++){
- a=parseInt(b[i])
- if(a>0){
-  brg+=a;
+for (i = 0; i < 10; i++) {
+ a = parseInt(b[i])
+ if (a > 0) {
+  brg += a;
   g++
  }
- else if(a<0){
-  brd-=a;
+ else if (a < 0) {
+  brd -= a;
   d++
  }
 }
-console.log(`Prosecna gornja temperature je ${brg/g}`)
-console.log(`Prosecna donja temperature je -${brd/d}`)
+console.log(`Prosecna gornja temperature je ${brg / g}`)
+console.log(`Prosecna donja temperature je -${brd / d}`)
