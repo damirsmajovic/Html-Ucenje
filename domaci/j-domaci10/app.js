@@ -1,0 +1,12 @@
+arr=[1,2,3,1,2]
+for(i=0;i<arr.length;i++){
+ if(arr[i]===1){
+  arr.splice(i,1)
+ }
+}
+for(i=0;i<arr.length;i++){
+ if(arr[i]===2){
+  arr.splice(i,1)
+ }
+}
+console.log(arr)
