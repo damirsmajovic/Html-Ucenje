@@ -193,29 +193,32 @@ font-weight: 900;
 }
 /* Down is Section 3*/
 .s3{
-height: 900px;
+height: 800px;
 flex-direction: column;
 align-items: center;
-justify-content: center;
+justify-content: space-around;
 background-color: #ffd60a;
+padding:15px 0px;
 }
 .s3-div{
- height: 22%;
+ height: 30%;
  width: 90%;
- border: 1px solid red;
  display: flex;
  flex-direction: column;
  justify-content: space-around;
  font-family: 'Ubuntu Condensed', sans-serif;
 }
+.s3-div-small{
+  height: 20%;
+}
 .s3-div h1{
- font-size: 41px;
+ font-size: 40px;
 }
 .s3-div h2{
  font-size: 32px;
 }
 .s3-div p{
- font-size: 16px;
+ font-size: 20px;
 }
 .s3-linija{
  width: 100%;
@@ -656,6 +659,9 @@ background-color: transparent;
   .linkovi{
     width: 25%;
   }
+  .s3{
+    height: 1000px;
+  }
 }
 @media screen and (max-width:875px) {
   header,
@@ -854,6 +860,9 @@ background-color: transparent;
   .class9-info{
     height:48% ;
   }
+  .s3{
+    height: 1100px;
+  }
 }
 @media screen and (max-width:645px) {
   .text-container{
@@ -862,6 +871,9 @@ background-color: transparent;
   .section-call-kocke-tri,
   .section-call-kocke{
     width: 85%;
+  }
+  .s3{
+    height: 1200px;
   }
 }
 @media screen and (max-width:560px) {
@@ -892,6 +904,7 @@ background-color: transparent;
   .section9-two{
     width: 100%;
   }
+  
 }
 @media screen and (max-width:500px) {
   .section-desno-text{
@@ -903,6 +916,18 @@ background-color: transparent;
   }
   .section-call-text{
     width: 100%;
+  }
+  .s3{
+    height: 1400px;
+  }
+  .s3-div h1{
+    font-size: 35px;
+  }
+  .s3-div h2{
+    font-size: 26px;
+  }
+  .s3-div p{
+    font-size: 18px;
   }
 }
 @media screen and (max-width:415px){
@@ -970,6 +995,9 @@ background-color: transparent;
   .linkovi{
     width: 30%;
   }
+  .s3{
+    height: 1550px;
+  }
 }
 @media screen and (max-width:330px){
   .number-desno{
@@ -992,5 +1020,8 @@ height: 70%;
   }
   .footer-div{
     font-size: 14px;
+  }
+  .s3{
+    height: 1750px;
   }
 }
