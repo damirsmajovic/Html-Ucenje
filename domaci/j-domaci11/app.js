@@ -1,0 +1,10 @@
+arr=[2,3,4,4,5,3,3,1,1,5]
+duplicate=[];
+c=0;
+for(i=0;i<arr.length;i++){
+ if(arr[i]===arr[i+1]){
+  duplicate[c]=arr[i]
+  c++
+ }
+}
+console.log(duplicate)
