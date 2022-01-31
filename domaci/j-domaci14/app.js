@@ -1,0 +1,10 @@
+arr1=["Keep","Remove","Keep","Remove","Keep","Remove","Keep","Remove","Keep","Remove",]
+arr2=[]
+c=0;
+for(i=0;i<arr1.length;i++){
+if(i%2==0){
+ arr2[c]=arr1[i]
+c++
+}
+}
+console.log(arr2);
