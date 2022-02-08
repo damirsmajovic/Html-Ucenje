@@ -16,6 +16,6 @@ function filter_list(l) {
     if(typeof l[i] !== 'string' ){
       s.push(l[i])
     }
-  }console.log(s); 
+  }console.log(s);  
 }
 filter_list(a)
