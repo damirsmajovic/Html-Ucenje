@@ -63,7 +63,7 @@ function ispisi(arr){
 for(i=0;i<arr.length;i++){
 var keys=Object.keys(arr[i])
 br=0;
-for(el of keys){
+for(key of keys){
  br++
 }
 console.log(arr.name, br);

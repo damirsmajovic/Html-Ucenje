@@ -24,19 +24,19 @@
 // b=numbers.map(makestring)
 // console.log(b);
 
-// rec=["dSnDs","jE","lep"]
-// function capitalize(a){
-//  c=""
-//  for(i=0;i<a.length;i++){
-//   if(i==0){
-//    c+=a[i].toUpperCase()
-//   }
-//   else{
-//    c+=a[i].toLowerCase()
-//   }
-//  }
-//  return c
-// }
+rec=["dSnDs","jE","lep"]
+function capitalize(a){
+ c=""
+ for(i=0;i<a.length;i++){
+  if(i==0){
+   c+=a[i].toUpperCase()
+  }
+  else{
+   c+=a[i].toLowerCase()
+  }
+ }
+ return c
+}
 // b=rec.map(capitalize)
 // console.log(b); ====> moj nacin
 // =============================
