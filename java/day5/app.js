@@ -39,7 +39,7 @@ break;
 default:
    console.log("Unet je pograsan broj");
 }*/
-/*
+
 a=prompt("Unesite broj izmedju 0 i 100");
 switch(true){
 case a>=0 && a<30:
@@ -53,6 +53,6 @@ console.log("Broj je low");
 break;
 default:
    console.log("Pogreasn unos")
-}*/
+}
 
 
