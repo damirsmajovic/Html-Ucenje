@@ -5,9 +5,13 @@ const App = () =>{
  return(
 <div className="container">
  <h1>Damirova lista</h1>
- <div className="form">
+ <div className="form" onChange={()=>{
+  console.log("Changed")
+ }}>
   <input type="text" />
-  <button>ADD</button>
+  <button onClick={()=>{
+   console.log("Clicked");
+  }}>ADD</button>
  </div>
  <Card/>
 </div>
