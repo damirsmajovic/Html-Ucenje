@@ -1,17 +1,17 @@
-/*a=5;
-switch(a){
-case 1:
-console.log("Slucaj je jedan")
-break
-case 2:
-console.log("Slucaj je dva")
-break
-case 3:
-console.log("Slucaj je tri")
-break
-default: 
-console.log("Pogresan unos")
-}*/
+// a=2;
+// switch(a){
+// case 1:
+// console.log("Slucaj je jedan")
+// break
+// case 2:
+// console.log("Slucaj je dva")
+// break
+// case 3:
+// console.log("Slucaj je tri")
+// break
+// default: 
+// console.log("Pogresan unos")
+// }
 /*
 a=prompt("Unesite broj dana")
 switch(parseInt(a)){

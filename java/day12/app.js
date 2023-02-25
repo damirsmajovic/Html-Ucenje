@@ -74,7 +74,7 @@ neWArr=[]
 j=0;
 for(i=0;i<arr.length;i++){
  if(arr[i]==false || arr[i]==undefined || arr[i]==null){
-  arr.splice(i,1)
+  arr.splice(i,1,"Nesto")
  }
 }
 console.log(arr)

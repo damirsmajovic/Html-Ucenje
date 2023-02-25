@@ -24,19 +24,20 @@
 // b=numbers.map(makestring)
 // console.log(b);
 
-rec=["dSnDs","jE","lep"]
-function capitalize(a){
- c=""
- for(i=0;i<a.length;i++){
-  if(i==0){
-   c+=a[i].toUpperCase()
-  }
-  else{
-   c+=a[i].toLowerCase()
-  }
- }
- return c
-}
+// rec=["dSnDs","jE","lep"]
+// function capitalize(a){
+//  c=""
+//  for(i=0;i<a.length;i++){
+//   if(i==0){
+//    c+=a[i].toUpperCase()
+//   }
+//   else{
+//    c+=a[i].toLowerCase()
+//   }
+//  }
+//  return c
+// }
+
 // b=rec.map(capitalize)
 // console.log(b); ====> moj nacin
 // =============================
@@ -47,7 +48,7 @@ function capitalize(a){
 //   return el
 //  })
 // }
-// console.log(capitalize(["Johm","JACOB","MaRko"])); ====> darisov nacin
+// console.log(capitalize(["Johm","JACOB","MaRko"])); 
 
 // console.log(namesOnly([
 //  {
@@ -107,13 +108,13 @@ function capitalize(a){
 // };
 // console.log(skraceno(novi));
 
-numbers=[45,4,9,16,25,13,38,60,52,29]
-b=numbers.map((el)=>{
- if(el%2==0){
-  return true
- }
- else{
-  return false
- }
-})
-console.log(b);
+// numbers=[45,4,9,16,25,13,38,60,52,29]
+// b=numbers.map((el)=>{
+//  if(el%2==0){
+//   return true
+//  }
+//  else{
+//   return false
+//  }
+// })
+// console.log(b);

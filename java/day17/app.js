@@ -1,14 +1,15 @@
-// function mojaF(){
-//  console.log("a");
-// }
-// b=function(){
-//  console.log("b");
-// }
-// b()
-// c = () => {
-//  console.log("c");
-// }
-// c();
+function mojaF(){
+ console.log("a");
+}
+mojaF()
+b=function(){
+ console.log("b");
+}
+b()
+c = () => {
+ console.log("c");
+}
+c();
 
 
 // const a=5;

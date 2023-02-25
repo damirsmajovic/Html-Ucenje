@@ -13,22 +13,23 @@
 // novi=[]
 // function a(a){
 //  for(i=0;i<a.length;i++){
-//   if(i%2==0 && a[i]!==" "){
+//   if( a[i]!==" "){
 //   novi.push(a[i].toLowerCase())
 //  }
-//  else if(a[i]!==" "){
-//   novi.push(a[i].toUpperCase());
+//  else {
+//   novi.push(a[i]);
 //  }
 //  }
+//   novi[0]=novi[0].toUpperCase()
 //  console.log(novi.join(""));
 // }
 // a(s)
 
 const data=[NaN,0,15,false,-22,"",undefined,47,null]
-br=0
+br=[]
 function a(a){
  if(!Boolean(a)){
-  br++
+  br.push(a)
  }
 }
 data.forEach(a)

@@ -23,12 +23,12 @@
 // else{
 //  console.log("Rec nije polindrom")
 // }
-n=parseInt(prompt("Unesite broj"));
-s="";
-for(i=1;i<=n;i++){
-  for(j=1;j<=i;j++){
-   s+=i;
-  }
-  console.log(s);
-  s="";
-}
+// n=parseInt(prompt("Unesite broj"));
+// s="";
+// for(i=1;i<=n;i++){
+//   for(j=1;j<=i;j++){
+//    s+=i;
+//   }
+//   console.log(s);
+//   s="";
+// }

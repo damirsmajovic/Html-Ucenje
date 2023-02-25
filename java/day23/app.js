@@ -89,8 +89,8 @@
 // })
 // console.log(isAnyHigh);
 
-numbers=[45,4,7,25,7]
-isAnyHigh=numbers.some((el)=>{
- return el%2===0
-})
-console.log(isAnyHigh);
+// numbers=[45,4,7,25,7]
+// isAnyHigh=numbers.some((el)=>{
+//  return el%2===0
+// })
+// console.log(isAnyHigh);

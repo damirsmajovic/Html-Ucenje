@@ -1,22 +1,22 @@
 /*macinje white space(prazan prostor)*/
 /*console.log("     NestoNebitno   ".trim())*/
-/*
-a="Damir";
-console.log(a[3])
-console.log(a.toUpperCase())
-console.log(a.toLowerCase())
-console.log(a.concat("Nesto"))
-console.log("Damir".indexOf("a"));
-console.log(a.includes("g"));  
-console.log(a.includes("D"));*/
+
+// a="Damir";
+// console.log(a[3])
+// console.log(a.toUpperCase())
+// console.log(a.toLowerCase())
+// console.log(a.concat("Nesto"))
+// console.log("Damir".indexOf("a"));
+// console.log(a.includes("g"));  
+// console.log(a.includes("D"));
 /*
 a=prompt("Unesite vase ime:");
 console.log("Vase ime u upper case :",a.toUpperCase(),"Vase ime u lower case",a.toLowerCase(),"Vase prezime je",a.concat("Smajovic"),"Vase ime sadrzi slovo a",a.includes("a"));*/
-/*
-str="Apple, Banana, Kiwi";
-part=str.slice(7, 13);
-console.log("Str:",str);
-console.log("Part:",part);*/
+
+// str="Apple, Banana, Kiwi";
+// part=str.slice(5, 13);
+// console.log("Str:",str);
+// console.log("Part:",part);
 /*
 text="Please visit Microsoft";
 newText=text.replace("Microsoft","W3School");
@@ -28,9 +28,9 @@ console.log(text.split(","));*/
 a=5+2;
 console.log("Ovaj broj je",a,"i on je u stringu");
 console.log(`Ovaj broj je ${a} i on je u stringu`);*/
-/*
-a=Math.random()*100;
-console.log(Math.round(a));*/
+
+// a=Math.random()*100;
+// console.log(Math.round(a));
 /*
 if(5>3){
  console.log("kod je tacan");

@@ -12,7 +12,7 @@
 //  b="";
 //  for(j=1;j<=10;j++){
 //   a=(i*j);
-//   b+=" "+a;
+//   b+=`${a} \t`;
 //  }
 //  console.log(b);
 // }
@@ -30,10 +30,10 @@ brg = 0;
 g = 0
 brd = 0;
 d = 0
-for (i = 0; i < 10; i++) {
- b[i] = prompt("Unesite broj temperature");
+for (i = 0; i < 5; i++) {
+ b[i] = prompt("Unesite broj "+ (i+1) +" temperature");
 }
-for (i = 0; i < 10; i++) {
+for (i = 0; i < b.length; i++) {
  a = parseInt(b[i])
  if (a > 0) {
   brg += a;

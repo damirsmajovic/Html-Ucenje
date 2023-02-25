@@ -284,27 +284,27 @@
 // noviel.innerText="Novi El"
 // main.appendChild(noviel)
 
-async function GetData() {
-  novi = [];
-  main = document.getElementById("main");
-  try {
-    const response = await fetch("https://jsonplaceholder.typicode.com/users");
-    const responseJson = await response.json();
-    console.log(responseJson);
-    for (i = 0; i < responseJson.length; i++) {
-      novi.push(responseJson[i].name);
-    }
-    for (i = 0; i < novi.length; i++) {
-      const noviel = document.createElement("p");
-      noviel.innerText = novi[i];
-      main.appendChild(noviel);
-    }
-    console.log(novi);
-  } catch (err) {
-    console.log(err);
-  }
-}
-GetData();
+// async function GetData() {
+//   novi = [];
+//   main = document.getElementById("main");
+//   try {
+//     const response = await fetch("https://jsonplaceholder.typicode.com/users");
+//     const responseJson = await response.json();
+//     console.log(responseJson);
+//     for (i = 0; i < responseJson.length; i++) {
+//       novi.push(responseJson[i].name);
+//     }
+//     for (i = 0; i < novi.length; i++) {
+//       const noviel = document.createElement("p");
+//       noviel.innerText = novi[i];
+//       main.appendChild(noviel);
+//     }
+//     console.log(novi);
+//   } catch (err) {
+//     console.log(err);
+//   }
+// }
+// GetData();
 
 // const sad=document.getElementById("main")
 // sad.classList.add(nesto)
@@ -331,10 +331,134 @@ GetData();
 //  console.log(event);
 // })
 
-const inp=document.getElementById("name")
-inp.addEventListener("change",inputchanger)
-console.log(inp);
-function inputchanger(){
- console.log("U changed");
- console.log(inp.value);
+// const inp=document.getElementById("name")
+// inp.addEventListener("change",inputchanger)
+// console.log(inp);
+// function inputchanger(){
+//  console.log("U changed");
+//  console.log(inp.value);
+// }
+
+// function numberOfPairs(gloves)
+// {
+//   for(p=0;p<gloves.lenght;p++){
+//     for(k=0;k<gloves[p].lenght;k++){
+//       if(gloves[p][k]==","){
+//         gloves[p]==""
+//       }
+//     }
+//   }
+//    a=0
+//   for(i=0;i<gloves.length;i++){
+//     for(j=i;j<gloves.length;j++){
+//       if(gloves[i]==gloves[j] && gloves[j].length!=0){
+//         a++
+//         gloves[i]=null
+//       }
+//     }
+//   }
+//   if(a<2){
+//     a=0
+//   }
+//   else{
+//     a=a/2
+//   }
+//   console.log(a);
+// }
+
+// k=["red","red","blue","blue",",,,,,,",",,,,,,"]
+
+// numberOfPairs(k)
+
+
+// function sumNoDuplicates(numList) {
+// var n=[];
+//   var sum=0
+//   for(i=0;i<=numList.length;i++){
+//     n.push(numList[i])
+//   }
+//   for(i=0;i<=numList.length;i++){
+//     for(j=1;j<=n.length-1;j++){
+//       // console.log(numList[i]);
+//       // console.log(n[j]);
+//       if(numList[i]==n[j]){
+//         // console.log(numList[i]);
+//         n[j]=0
+//       }
+//     }
+//   }
+//   for(i=0;i<=n.length;i++){
+//     console.log(n[i]);
+//     sum+=n[i]
+//   }
+// //  console.log(sum);
+// }
+// a=[1,1,2,2,3,3]
+// sumNoDuplicates(a)
+
+// function sumNoDuplicates(numList) {
+//   temp=0
+//   var sum=0
+//   for(i=0;i<numList.length;i++){
+//     if(numList[i].length>1){
+//       sumNoDuplicates(numList[i])
+//     }
+//     temp=numList[i]
+//     sum+=numList[i]
+//     for(j=0;j<numList.length;j++){
+//       if(temp==numList[j]){
+//         numList[j]=0
+//       }
+//     }
+//   }
+//   console.log(sum);
+// }
+
+// var a=[1,1,2,2,3,3,3]
+
+// console.log(a);
+// sumNoDuplicates(a)
+
+// function numberToPower(number, power){
+//   t=number
+//   if(power>0){
+//     for(i=1;i<power;i++){
+//     number*=t
+//     }
+//   }
+//   else{
+//     console.log(number);
+//   }
+// console.log(number);
+// }
+// numberToPower(10,4)
+
+// function indexOf(head, value) {
+//   if(head==null){
+//     return -1
+//   }
+//   else{
+//  console.log(head.indexOf(value));  }
+  
+// }
+// a=[1,2,3,3,4]
+// indexOf(a,3)
+
+function indexOf(head, value) {
+
+  if(head==null){
+    console.log(-1);
+  }
+  else{
+    for(i=0;i<head.length;i++){
+      if(head[i]==value){
+
+        console.log(i);
+      }
+    }
+  }
+  
 }
+
+ a=[1,2,3,3,4,"17"]
+indexOf(a,"17")

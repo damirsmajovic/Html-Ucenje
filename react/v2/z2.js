@@ -1,1 +1,0 @@
-ReactDOM.render(<h1>Nesto</h1>, document.getElementById("glavni"))

@@ -14,23 +14,23 @@
 //  delioci++
 // }
 // }
-// if(delioci===2){
+// if(delioci==2){
 //  console.log(i);
 // }
 // }
 
-// a=parseInt(prompt("Unesite pocetnu vrednost"))
-// b=parseInt(prompt("Unesite krajnu vrednost"))
-// for(i=a;i<=100;i++){
-// if(i%a==0 && i%b==0){
-//  console.log(i);
-//  break
-// }
-// }
-a=parseInt(prompt("Unesite broj slova"));
-b="";
-for(i=1;i<=a;i++){
-unos=prompt(`${i} , slovo`)
-b+=unos;
+a=parseInt(prompt("Unesite pocetnu vrednost"))
+b=parseInt(prompt("Unesite krajnu vrednost"))
+for(i=a;i<=100;i++){
+if(i%a==0 && i%b==0){
+ console.log(i);
+ break
 }
-console.log(b);
+}
+// a=parseInt(prompt("Unesite broj slova"));
+// b="";
+// for(i=1;i<=a;i++){
+// unos=prompt(`${i} , slovo`)
+// b+=unos;
+// }
+// console.log(b);
