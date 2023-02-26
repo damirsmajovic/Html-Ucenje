@@ -444,21 +444,40 @@
 // a=[1,2,3,3,4]
 // indexOf(a,3)
 
-function indexOf(head, value) {
+// function indexOf(head, value) {
 
-  if(head==null){
-    console.log(-1);
-  }
-  else{
-    for(i=0;i<head.length;i++){
-      if(head[i]==value){
+//   if(head==null){
+//     console.log(-1);
+//   }
+//   else{
+//     for(i=0;i<head.length;i++){
+//       if(head[i]==value){
 
-        console.log(i);
+//         console.log(i);
+//       }
+//     }
+//   }
+  
+// }
+
+//  a=[1,2,3,3,4,"17"]
+// indexOf(a,"17")
+
+function spinWords(string){
+  a=string.split(" ")
+  for(i=0;i<a.length;i++){
+    console.log(a[i]);
+    n=""
+    p=a[i]
+    if(p.length>=5){
+      for(j=p.length-1;j>=0;j--){
+       n+=p[j]
       }
+      a[i]=n
     }
   }
-  
+ a= a.join(" ")
+  console.log(a);
 }
-
- a=[1,2,3,3,4,"17"]
-indexOf(a,"17")
+a="Welcome today"
+spinWords(a)
