@@ -463,21 +463,44 @@
 //  a=[1,2,3,3,4,"17"]
 // indexOf(a,"17")
 
-function spinWords(string){
-  a=string.split(" ")
-  for(i=0;i<a.length;i++){
-    console.log(a[i]);
-    n=""
-    p=a[i]
-    if(p.length>=5){
-      for(j=p.length-1;j>=0;j--){
-       n+=p[j]
-      }
-      a[i]=n
-    }
-  }
- a= a.join(" ")
-  console.log(a);
+// function spinWords(string){
+//   a=string.split(" ")
+//   for(i=0;i<a.length;i++){
+//     console.log(a[i]);
+//     n=""
+//     p=a[i]
+//     if(p.length>=5){
+//       for(j=p.length-1;j>=0;j--){
+//        n+=p[j]
+//       }
+//       a[i]=n
+//     }
+//   }
+//  a= a.join(" ")
+//   console.log(a);
+// }
+// a="Welcome today"
+// spinWords(a)
+
+function digitalRoot(n) {
+  p=0
+ while(n>1){
+p+=Math.floor(n%10)
+n=n/10
+ }
+ p+=n
+ console.log(p);
+ if(p/10>=1){
+  digitalRoot(p)
+ }
+ else{
+  console.log(Math.floor(p));
+ }
 }
-a="Welcome today"
-spinWords(a)
+
+
+// a="10"
+// c=parseInt(a)
+// b=2
+// console.log(parseInt(c+b));
+digitalRoot(456)
