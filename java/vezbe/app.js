@@ -482,25 +482,128 @@
 // a="Welcome today"
 // spinWords(a)
 
-function digitalRoot(n) {
-  p=0
- while(n>1){
-p+=Math.floor(n%10)
-n=n/10
- }
- p+=n
- console.log(p);
- if(p/10>=1){
-  digitalRoot(p)
- }
- else{
-  console.log(Math.floor(p));
- }
-}
+// function digitalRoot(n) {
+//   p=0
+//  while(n>1){
+// p+=Math.floor(n%10)
+// n=n/10
+//  }
+//  p+=n
+//  console.log(p);
+//  if(p/10>=1){
+//   digitalRoot(p)
+//  }
+//  else{
+//   console.log(Math.floor(p));
+//  }
+// }
 
 
 // a="10"
 // c=parseInt(a)
 // b=2
 // console.log(parseInt(c+b));
-digitalRoot(456)
+// digitalRoot(456)
+
+// function findOutlier(integers){
+//  var a=[]
+//   var b=[]
+//   for(i=0;i<integers.length;i++){
+//     if(integers[i]%2==0 || integers[i]==0){
+//       a.push(integers[i])
+//     }
+//     else if(integers[i]%2!=0 ){
+//       b.push(integers[i])
+//     }
+//   }
+//   if(a.length>b.length){
+// console.log(b[0]);
+//   }
+//   else{
+//     for(i=0;i<a.length;i++){
+//       if(a[i]!=0){
+//         console.log(a[i]);
+//       }
+//     }
+//   }
+// }
+// k=[0,1,2]
+// findOutlier(k)
+
+// function isValidWalk(walk) {
+//  if(walk.length>10){
+//    return false
+//  }
+//   w=0
+//   s=0
+//   n=0
+//   e=0
+//   for(i=0;i<walk.length;i++){
+//     switch(walk[i]){
+//       case 'w':
+//         w++
+//         break;
+//         case 's':
+//         s++
+//         break;
+//         case 'n':
+//         n++
+//         break;
+//         case 'e':
+//         e++
+//         break;
+//     }
+//   }
+//   if(n==s && e==w){
+//     console.log("true");
+//   }
+//   else{
+//     console.log("false");
+//   }
+// }
+// a=['n','s','n','s','n','s','n','s','n','s']
+// isValidWalk(a)
+
+// function moveZeros(arr) {
+//   br=[]
+//   n=[]
+//   for(i=0;i<arr.length;i++){
+//     if(arr[i]!=0 || arr[i].toString()=="false" || arr[i].length==0 || arr[i]+1!=1){
+//       n.push(arr[i])
+//     }
+//     else if(1+arr[i]=='10'){
+//       n.push(arr[i])
+//     }
+//     else if(arr[i]==0 && arr[i]+1==1){br.push(arr[i])}
+//   }
+//   for(i=0;i<br.length;i++){
+//     n.push(br[i])
+//   }
+//   console.log(n);
+// }
+// k=[ '8', '4', 2, '4', {}, '6', false, '4', 0,3, '1', 9, false, '0','8', '8', {}, '0', +0 ]
+// moveZeros(k)
+// if('0'==0){
+//   console.log("nije");
+// }
+// console.log('1'+0);
+
+function order(words){
+  a=[]
+  words=words.split(" ")
+  for(i=0;i<words.length;i++){
+    for(j=0;j<words[i].length;j++){
+
+      if(isNaN(words[i][j])==false){
+        a[words[i][j]]=words[i]
+      }
+    }
+  }
+  b=[]
+  for(i=1;i<a.length;i++){
+b.push(a[i])
+  }
+  console.log(b);
+}
+test="is2 Thi1s T4est 3a"
+order(test)
