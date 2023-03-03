@@ -588,22 +588,41 @@
 // }
 // console.log('1'+0);
 
-function order(words){
-  a=[]
-  words=words.split(" ")
-  for(i=0;i<words.length;i++){
-    for(j=0;j<words[i].length;j++){
+// function order(words){
+//   a=[]
+//   words=words.split(" ")
+//   for(i=0;i<words.length;i++){
+//     for(j=0;j<words[i].length;j++){
 
-      if(isNaN(words[i][j])==false){
-        a[words[i][j]]=words[i]
-      }
+//       if(isNaN(words[i][j])==false){
+//         a[words[i][j]]=words[i]
+//       }
+//     }
+//   }
+//   b=[]
+//   for(i=1;i<a.length;i++){
+// b.push(a[i])
+//   }
+//   console.log(b);
+// }
+// test="is2 Thi1s T4est 3a"
+// order(test)
+
+function toCamelCase(str){
+a=str.split("-")
+a=str.split("_")
+  n=""
+  for(i=0;i<a.length;i++){
+  for(j=0;j<a[i].length;j++){
+    if(j==0){
+      n+=a[i][j].toUpperCase()
+    }
+    else{
+      n+=a[i][j]
     }
   }
-  b=[]
-  for(i=1;i<a.length;i++){
-b.push(a[i])
   }
-  console.log(b);
+  console.log(n); 
 }
-test="is2 Thi1s T4est 3a"
-order(test)
+test="the_stealth_warrior"
+toCamelCase(test)
