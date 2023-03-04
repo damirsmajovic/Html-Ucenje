@@ -609,12 +609,26 @@
 // order(test)
 
 function toCamelCase(str){
-a=str.split("-")
-a=str.split("_")
+  g=str.indexOf("-")
+  d=str.indexOf("_")
+var a= str.replaceAll('-', '$').replaceAll('_', '$') .split('$');
+ide=0
+if(g==-1){
+  ide++
+}
+else if(d<g){
+  ide++
+}
+console.log(ide);
+console.log(a);
   n=""
   for(i=0;i<a.length;i++){
   for(j=0;j<a[i].length;j++){
-    if(j==0){
+    if(i==0 && ide>0 && j==0){
+      n+=a[i][j]
+      console.log("nesto");
+    }
+    else if(j==0){
       n+=a[i][j].toUpperCase()
     }
     else{

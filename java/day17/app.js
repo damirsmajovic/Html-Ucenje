@@ -1,7 +1,7 @@
 function mojaF(){
  console.log("a");
 }
-mojaF()
+mojaF(    )
 b=function(){
  console.log("b");
 }
