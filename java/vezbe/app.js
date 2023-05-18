@@ -608,35 +608,87 @@
 // test="is2 Thi1s T4est 3a"
 // order(test)
 
-function toCamelCase(str){
-  g=str.indexOf("-")
-  d=str.indexOf("_")
-var a= str.replaceAll('-', '$').replaceAll('_', '$') .split('$');
-ide=0
-if(g==-1){
-  ide++
-}
-else if(d<g){
-  ide++
-}
-console.log(ide);
-console.log(a);
-  n=""
-  for(i=0;i<a.length;i++){
-  for(j=0;j<a[i].length;j++){
-    if(i==0 && ide>0 && j==0){
-      n+=a[i][j]
-      console.log("nesto");
-    }
-    else if(j==0){
-      n+=a[i][j].toUpperCase()
-    }
-    else{
-      n+=a[i][j]
-    }
+// function toCamelCase(str){
+//   g=str.indexOf("-")
+//   d=str.indexOf("_")
+// var a= str.replaceAll('-', '$').replaceAll('_', '$') .split('$');
+// ide=0
+// if(g==-1){
+//   ide++
+// }
+// else if(d<g){
+//   ide++
+// }
+// console.log(ide);
+// console.log(a);
+//   n=""
+//   for(i=0;i<a.length;i++){
+//   for(j=0;j<a[i].length;j++){
+//     if(i==0 && ide>0 && j==0){
+//       n+=a[i][j]
+//       console.log("nesto");
+//     }
+//     else if(j==0){
+//       n+=a[i][j].toUpperCase()
+//     }
+//     else{
+//       n+=a[i][j]
+//     }
+//   }
+//   }
+//   console.log(n); 
+// }
+// test="the_stealth_warrior"
+// toCamelCase(test)
+
+// function disemvowel(str) {
+//   nov="";
+//   vov=['a','A','e','E','i','I','o','O','u','U']
+//   for(i=0;i<str.length;i++){
+//     br=0
+//     for(j=0;j<vov.length;j++){
+//       if(vov[j]==str[i]){
+//         br++
+//       }
+//     }
+//     if(br==0){
+//       nov+=str[i]
+//     }
+//   }
+//   console.log(nov);
+// }
+// a="Today is a very nice Day"
+// disemvowel(a)
+
+// function findOdd(A) {
+//  for(i=0;i<A.length;i++){
+//    br=0
+//    for(j=0;j<A.length;j++){
+//      if(A[i]==A[j]){
+//        br++
+//      }
+//    }
+//    if(br%2!=0){
+//      return A[i]
+//    }
+//  }
+// }
+
+function persistence(num) {
+   br=0
+  temp=1
+  text=num.toString()
+  text=text.split("")
+  while(text.length!=1){
+  for(i=0;i<text.length;i++){
+    temp*=parseInt(text[i])
   }
-  }
-  console.log(n); 
+  br++
+  text=temp.toString()
+  text=text.split("")
+  temp=1
 }
-test="the_stealth_warrior"
-toCamelCase(test)
+console.log(br);
+}
+a=245
+persistence(a)
