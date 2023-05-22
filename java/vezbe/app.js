@@ -674,21 +674,90 @@
 //  }
 // }
 
-function persistence(num) {
-   br=0
-  temp=1
-  text=num.toString()
-  text=text.split("")
-  while(text.length!=1){
-  for(i=0;i<text.length;i++){
-    temp*=parseInt(text[i])
-  }
-  br++
-  text=temp.toString()
-  text=text.split("")
-  temp=1
-}
-console.log(br);
-}
-a=245
-persistence(a)
+// function persistence(num) {
+//    br=0
+//   temp=1
+//   text=num.toString()
+//   text=text.split("")
+//   while(text.length!=1){
+//   for(i=0;i<text.length;i++){
+//     temp*=parseInt(text[i])
+//   }
+//   br++
+//   text=temp.toString()
+//   text=text.split("")
+//   temp=1
+// }
+// console.log(br);
+// }
+// a=245
+// persistence(a)
+
+// ----------------------------------------------------------------------------------------------
+
+// function getCount(str) {
+//   vovel=['a','A','e','E','i','I','o','O','u','U']
+//   br=0
+//   vovel.map((el)=>{
+//     for(i=0;i<str.length;i++){
+//       if(str[i]==el){
+//         br++
+//       }
+//     }
+//   })
+//   return br
+// }
+// vovel count (lvl 7)  best version-> function getCount(str) {
+ // return (str.match(/[aeiou]/ig)||[]).length;}
+
+// ----------------------------------------------------------------------------------------------
+
+// function duplicateCount(text){
+// tren=""
+//   novi=0
+//   text=text.toLowerCase()
+//   text=text.split("")
+//   for(i=0;i<text.length;i++){
+//     for(j=i+1;j<text.length;j++){
+//       if(text[i]==text[j] && text[i]!=0){
+//         tren+=text[i]
+//         text[j]=0
+//       }
+//     }
+//     if(tren.length>=1){
+//       novi++
+//     }
+//     tren=""
+//   }
+//   return novi
+// }
+// Counting Duplicates (lvl 6) best version-> function duplicateCount(text){
+//return (text.toLowerCase().split('').sort().join('').match(/([^])\1+/g) || []).length;}
+
+// ----------------------------------------------------------------------------------------------
+
+// function alphabetPosition(text) {
+//   alphabet=['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
+//   newstr=[]
+//   text=text.toUpperCase()
+//  text=text.split("")
+//   for(i=0;i<text.length;i++){
+//     for(j=0;j<alphabet.length;j++){
+//       if(text[i]==alphabet[j]){
+//         newstr.push(j+1)
+//       }
+//     }
+//   }
+//   return newstr.join(" ")
+// }
+
+// Replace With Alphabet Position (lvl 6) BS-> function alphabetPosition(text) {
+  // var result = "";
+  // for (var i = 0; i < text.length; i++){
+  //   var code = text.toUpperCase().charCodeAt(i)
+  //   if (code > 64 && code < 91) result += (code - 64) + " ";
+  // }
+
+  // return result.slice(0, result.length-1);}
+
+// ----------------------------------------------------------------------------------------------
